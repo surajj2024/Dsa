@@ -3,25 +3,36 @@ using namespace std;
 
 int minValue(int num[], int n)
 {
-    int min = INT_MAX;
+    int mini = INT_MAX;
     for(int i = 0; i < n; i++){
-        if(num[i] < min){
+        
+        // another trick
+        mini = min(mini, num[i]);
+
+        // normal case
+        /* if(num[i] < min){
             min = num[i];
-        }
+        } */
     }
     // return min value
-    return min;
+    return mini;
 }
 int maxValue(int num[], int n)
 {
-    int max = INT_MIN;
+    int maxi = INT_MIN;
     for(int i = 0; i < n; i++){
-        if(num[i] > max){
+        
+        // trick 
+        maxi = max(maxi, num[i]);
+
+
+        // normal case
+        /* if(num[i] > max){
             max = num[i];
-        }
+        } */
     }
     // return min value
-    return max;
+    return maxi;
 }
 
 int main()
