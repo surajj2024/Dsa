@@ -6,7 +6,7 @@ int minValue(int num[], int n)
     int mini = INT_MAX;
     for(int i = 0; i < n; i++){
         
-        // another trick
+        // trick pre defined function
         mini = min(mini, num[i]);
 
         // normal case
@@ -22,7 +22,7 @@ int maxValue(int num[], int n)
     int maxi = INT_MIN;
     for(int i = 0; i < n; i++){
         
-        // trick 
+        // trick pre defined function
         maxi = max(maxi, num[i]);
 
 
